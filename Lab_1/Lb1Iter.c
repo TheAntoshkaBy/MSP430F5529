@@ -31,7 +31,7 @@ int main(void)
 
   P1OUT &= ~BIT0; // led 1 shut down
 
-  P2IES |= BIT2; // process interrupt on signal's front
+  P2IES |= BIT2; // process interrupt on signal's high-to-low transition
   P2IE |= BIT2; // allow interrupts for s2
   P2IFG &= ~BIT2; // reset interrupt flag for s2
 
