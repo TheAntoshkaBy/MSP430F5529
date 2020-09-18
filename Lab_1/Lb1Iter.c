@@ -3,9 +3,6 @@
 const long int SMALL_DELAY = 1000;
 const long int BIG_DELAY = 1000;
 
-void ledAHandler();
-void ledAOnHandler();
-void ledAOffHandler();
 void delay(long int num_of_ops);
 void buttonPressHandler();
 int getS1State();
