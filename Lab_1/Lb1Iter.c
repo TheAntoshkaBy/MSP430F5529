@@ -56,7 +56,7 @@ __interrupt void handleS2StateChange()
 		// S2 was pressed
 		if(getS1State())
 		{
-			P1OUT ^= BIT0; // led 4 on
+			P1OUT ^= BIT0; // led 1 on
 		}
 	}
 
@@ -80,13 +80,10 @@ int getS2State()
 
 void delay(long int num_of_ops)
 {
-	// P2IE &= ~BIT2;
 	volatile long int a = 0;
 	volatile long int i = 0;
 	for(; i < num_of_ops; i++)
 	{
 		a += i;
 	}
-	// P2IE |= BIT2;
-
 }
